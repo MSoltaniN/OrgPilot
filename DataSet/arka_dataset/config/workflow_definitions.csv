@@ -1,0 +1,13 @@
+﻿workflow_id,name_fa,owner,units,stage_order,stage,from_event,to_event,sla_hours,stage_target_median_h
+WF1,سفارش تا تحویل,M01,U_SAL→U_OPS→U_SUP,1,ثبت تا پرداخت,created_at,paid,1,0.25
+WF1,سفارش تا تحویل,M01,U_SAL→U_OPS→U_SUP,2,پرداخت تا جمع‌آوری,paid,picked,12,4
+WF1,سفارش تا تحویل,M01,U_SAL→U_OPS→U_SUP,3,جمع‌آوری تا تحویل به ارسال,picked,handed_over,6,3
+WF1,سفارش تا تحویل,M01,U_SAL→U_OPS→U_SUP,4,ارسال تا تحویل به مشتری,handed_over,delivered,promised_by,24
+WF1,سفارش تا تحویل,M01,U_SAL→U_OPS→U_SUP,5,پیگیری و شکایت,delivered,ticket پیگیری سفارش,,
+WF2,شکایت تا حل,M01,U_SUP→U_OPS→U_SUP,1,ثبت تا پاسخ اول,created_at,first_response,8,4
+WF2,شکایت تا حل,M01,U_SUP→U_OPS→U_SUP,2,پاسخ اول تا بازرسی انبار,first_response,inspected,36,18
+WF2,شکایت تا حل,M01,U_SUP→U_OPS→U_SUP,3,بازرسی تا حل,inspected,resolved,24,8
+WF3,سرنخ تا قرارداد سازمانی,M01,T_DIG→T_ENT,1,سرنخ تا تماس اول,created_at,first_contact,24,8
+WF3,سرنخ تا قرارداد سازمانی,M01,T_DIG→T_ENT,2,تماس اول تا واجد شرایط,first_contact,qualified,72,48
+WF3,سرنخ تا قرارداد سازمانی,M01,T_DIG→T_ENT,3,واجد شرایط تا پیشنهاد,qualified,proposal_sent,120,96
+WF3,سرنخ تا قرارداد سازمانی,M01,T_DIG→T_ENT,4,پیشنهاد تا بستن,proposal_sent,won/lost,720,400

@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Arka Daily Brief (machine-readable twin of each morning report)",
+  "description": "One file per manager per morning: submission/briefs/day_XXX/<manager_id>.json, XXX = report day (data up to day XXX-1). The human-readable Persian brief goes in text_fa; every number that appears in text_fa must also appear in numbers[] (or in an item/evidence) with its KPI reference.",
+  "type": "object",
+  "required": ["report_day", "manager_id", "items", "numbers", "data_issues", "text_fa"],
+  "properties": {
+    "report_day": {"type": "integer", "description": "day index of the morning (data through report_day-1)"},
+    "manager_id": {"type": "string"},
+    "items": {
+      "type": "array", "maxItems": 5,
+      "items": {
+        "type": "object",
+        "required": ["item_id", "status", "kpi_id", "entity_id", "dim", "kpi_date", "value", "causes", "owner_manager_id"],
+        "properties": {
+          "item_id": {"type": "string"},
+          "title_fa": {"type": "string"},
+          "status": {"enum": ["new", "escalated", "ongoing"]},
+          "kpi_id": {"type": "string"}, "entity_id": {"type": "string"}, "dim": {"type": "string", "description": "breakdown value or empty string"},
+          "kpi_date": {"type": "string", "format": "date"}, "value": {"type": ["number", "null"]},
+          "related_series": {"type": "array", "items": {"type": "string", "description": "kpi_id:entity_id:dim"}},
+          "causes": {"type": "array", "items": {"type": "object", "properties": {"text_fa": {"type": "string"}, "confidence": {"type": "number", "minimum": 0, "maximum": 1}}}},
+          "escalation_history_fa": {"type": "string"},
+          "owner_manager_id": {"type": "string"},
+          "decision_card": {"type": ["object", "null"]},
+          "evidence": {"type": "array", "items": {"$ref": "#/$defs/number"}}
+        }
+      }
+    },
+    "numbers": {"type": "array", "items": {"$ref": "#/$defs/number"}},
+    "open_items": {"type": "array", "items": {"type": "object", "properties": {"kpi_id": {"type": "string"}, "entity_id": {"type": "string"}, "dim": {"type": "string"}, "since_day": {"type": "integer"}}}},
+    "data_issues": {"type": "array", "items": {"type": "object", "properties": {
+      "source": {"enum": ["orders", "tickets", "crm", "tasks", "marketing", "sessions", "availability"]},
+      "type": {"enum": ["missing", "late_arrival", "duplicate", "schema_change", "late_correction", "other"]},
+      "data_day": {"type": "integer"}, "detail_fa": {"type": "string"}}}},
+    "decision_followups": {"type": "array", "items": {"type": "object", "properties": {
+      "decision_id": {"type": "string"}, "kpi_id": {"type": "string"}, "entity_id": {"type": "string"},
+      "effect_direction": {"enum": ["improved", "worsened", "no_change", "too_early"]}, "detail_fa": {"type": "string"}}}},
+    "mentioned_staff_ids": {"type": "array", "items": {"type": "string"}},
+    "text_fa": {"type": "string"}
+  },
+  "$defs": {
+    "number": {"type": "object", "required": ["kpi_id", "entity_id", "dim", "kpi_date", "value"],
+      "properties": {"kpi_id": {"type": "string"}, "entity_id": {"type": "string"}, "dim": {"type": "string"},
+                     "kpi_date": {"type": "string", "format": "date"}, "value": {"type": ["number", "null"]}, "query_id": {"type": "string"}}}
+  }
+}

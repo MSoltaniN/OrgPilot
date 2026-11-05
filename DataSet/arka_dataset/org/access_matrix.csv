@@ -1,0 +1,12 @@
+﻿manager_id,visible_entities,individual_level_data_team,note_fa
+M01,ORG|U_SAL|U_OPS|U_SUP|T_ENT|T_DIG|T_WH|T_SHP|T_RSP|T_CMP|T_MKT,,فقط داده تجمیعی زیرمجموعه
+M02,U_SAL|T_ENT|T_DIG|T_MKT,,فقط داده تجمیعی زیرمجموعه
+M03,U_OPS|T_WH|T_SHP,,فقط داده تجمیعی زیرمجموعه
+M04,U_SUP|T_RSP|T_CMP,,فقط داده تجمیعی زیرمجموعه
+M05,T_ENT,T_ENT,داده فردی فقط برای سرپرست مستقیم
+M06,T_DIG,T_DIG,داده فردی فقط برای سرپرست مستقیم
+M07,T_WH,T_WH,داده فردی فقط برای سرپرست مستقیم
+M08,T_SHP,T_SHP,داده فردی فقط برای سرپرست مستقیم
+M09,T_RSP,T_RSP,داده فردی فقط برای سرپرست مستقیم
+M10,T_CMP,T_CMP,داده فردی فقط برای سرپرست مستقیم
+M11,T_MKT,T_MKT,داده فردی فقط برای سرپرست مستقیم

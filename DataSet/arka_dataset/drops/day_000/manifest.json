@@ -1,0 +1,8 @@
+{
+  "drop_day": 0,
+  "date": "initial_load",
+  "files": {
+    "crm_leads.csv": 938,
+    "crm_lead_events.csv": 1699
+  }
+}

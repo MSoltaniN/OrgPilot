@@ -1,0 +1,13 @@
+{
+  "title": "Answer to a scripted manager question: submission/qa/<question_id>.json",
+  "type": "object",
+  "required": ["question_id", "manager_id", "answer_status", "answer_fa"],
+  "properties": {
+    "question_id": {"type": "string"}, "manager_id": {"type": "string"},
+    "answer_status": {"enum": ["answered", "refused_out_of_scope", "refused_individual_data", "data_unavailable", "clarification_requested"]},
+    "rows": {"type": "array", "description": "the result table you show (list of objects; column names free)"},
+    "sql": {"type": "string", "description": "the executed query (logged)"},
+    "definition_used_fa": {"type": "string"},
+    "answer_fa": {"type": "string"}
+  }
+}

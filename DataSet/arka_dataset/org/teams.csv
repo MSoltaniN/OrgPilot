@@ -1,0 +1,8 @@
+﻿team_id,name_fa,unit_id,supervisor_id,effective_from_day,effective_from_date
+T_ENT,تیم فروش سازمانی,U_SAL,M05,1,2026-07-23
+T_DIG,تیم بازاریابی دیجیتال,U_SAL,M06,1,2026-07-23
+T_WH,تیم انبار,U_OPS,M07,1,2026-07-23
+T_SHP,تیم ارسال,U_OPS,M08,1,2026-07-23
+T_RSP,تیم پاسخ‌گویی,U_SUP,M09,1,2026-07-23
+T_CMP,تیم شکایات و مرجوعی,U_SUP,M10,1,2026-07-23
+T_MKT,تیم مارکت‌پلیس,U_SAL,M11,75,2026-10-05

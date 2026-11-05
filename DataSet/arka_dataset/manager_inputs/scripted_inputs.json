@@ -1,0 +1,190 @@
+[
+  {
+    "input_id": "IN01",
+    "day": 62,
+    "date": "2026-09-22",
+    "manager_id": "M01",
+    "type": "priority",
+    "content_fa": "این ماه تمرکز من روی زمان تحویل و تجربه مشتری است."
+  },
+  {
+    "input_id": "Q01",
+    "day": 66,
+    "date": "2026-09-26",
+    "manager_id": "M09",
+    "type": "question",
+    "content_fa": "چرا زمان پاسخ اول بالا رفته؟ تیکت‌های دیروز تیم پاسخ‌گویی را به تفکیک دسته نشان بده."
+  },
+  {
+    "input_id": "Q02",
+    "day": 67,
+    "date": "2026-09-27",
+    "manager_id": "M04",
+    "type": "question",
+    "content_fa": "میانه زمان پاسخ اول دیروز چقدر بود؟"
+  },
+  {
+    "input_id": "IN02",
+    "day": 68,
+    "date": "2026-09-28",
+    "manager_id": "M04",
+    "type": "decision",
+    "content_fa": "انتقال موقت ۱ نفر از تیم شکایات به تیم پاسخ‌گویی تا پایان روز ۷۵",
+    "decision_id": "DE-01"
+  },
+  {
+    "input_id": "IN03",
+    "day": 69,
+    "date": "2026-09-29",
+    "manager_id": "M04",
+    "type": "decision",
+    "content_fa": "انتشار پاسخ آماده برای ۵ سؤال پرتکرار کمپین در سایت و اپ",
+    "decision_id": "DE-02"
+  },
+  {
+    "input_id": "Q03",
+    "day": 70,
+    "date": "2026-09-30",
+    "manager_id": "M02",
+    "type": "question",
+    "content_fa": "درآمد خالص این ماه تا دیروز چقدر است و چند درصد هدف تناسبی محقق شده؟"
+  },
+  {
+    "input_id": "Q04",
+    "day": 72,
+    "date": "2026-10-02",
+    "manager_id": "M01",
+    "type": "question",
+    "content_fa": "میانه زمان جمع‌آوری انبار در ۷ روز گذشته به تفکیک روز"
+  },
+  {
+    "input_id": "IN04",
+    "day": 73,
+    "date": "2026-10-03",
+    "manager_id": "M01",
+    "type": "upload",
+    "content_fa": "صورت‌جلسه جلسه هفتگی",
+    "attachment": "uploads/day073_M01_meeting_minutes.md"
+  },
+  {
+    "input_id": "IN05",
+    "day": 75,
+    "date": "2026-10-05",
+    "manager_id": "M01",
+    "type": "org_change",
+    "content_fa": "تیم مارکت‌پلیس (T_MKT) با سرپرست M11 از امروز زیر واحد فروش فعال است؛ دو کارشناس E25 و E26."
+  },
+  {
+    "input_id": "Q05",
+    "day": 78,
+    "date": "2026-10-08",
+    "manager_id": "M11",
+    "type": "question",
+    "content_fa": "تعداد سفارش‌های مارکت‌پلیس از ابتدای فعالیت تیم تا دیروز"
+  },
+  {
+    "input_id": "Q06",
+    "day": 79,
+    "date": "2026-10-09",
+    "manager_id": "M11",
+    "type": "question",
+    "content_fa": "درآمد کل شرکت دیروز چقدر بود؟"
+  },
+  {
+    "input_id": "Q07",
+    "day": 76,
+    "date": "2026-10-06",
+    "manager_id": "M01",
+    "type": "question",
+    "content_fa": "فروش دیروز چقدر بود؟"
+  },
+  {
+    "input_id": "Q08",
+    "day": 77,
+    "date": "2026-10-07",
+    "manager_id": "M03",
+    "type": "question",
+    "content_fa": "دیروز چند سفارش ثبت شد؟"
+  },
+  {
+    "input_id": "IN06",
+    "day": 78,
+    "date": "2026-10-08",
+    "manager_id": "M04",
+    "type": "threshold_change",
+    "content_fa": "آستانه هشدار (warn) شاخص K_RSP_FRT_MED را از ۳ به ۴ ساعت تغییر بده."
+  },
+  {
+    "input_id": "Q09",
+    "day": 80,
+    "date": "2026-10-10",
+    "manager_id": "M02",
+    "type": "question",
+    "content_fa": "چرا عدد فروش گزارش بیرونی پیوست با عدد داشبورد فرق دارد؟"
+  },
+  {
+    "input_id": "IN07",
+    "day": 80,
+    "date": "2026-10-10",
+    "manager_id": "M02",
+    "type": "upload",
+    "content_fa": "گزارش فروش دو هفته اخیر از مشاور بیرونی (Excel)",
+    "attachment": "uploads/day080_M02_external_sales_report.csv"
+  },
+  {
+    "input_id": "Q10",
+    "day": 83,
+    "date": "2026-10-13",
+    "manager_id": "M07",
+    "type": "question",
+    "content_fa": "کارهای باز هر عضو تیم انبار امروز"
+  },
+  {
+    "input_id": "Q11",
+    "day": 84,
+    "date": "2026-10-14",
+    "manager_id": "M03",
+    "type": "question",
+    "content_fa": "بار کاری هر نفر در تیم انبار را نشان بده."
+  },
+  {
+    "input_id": "Q12",
+    "day": 86,
+    "date": "2026-10-16",
+    "manager_id": "M05",
+    "type": "question",
+    "content_fa": "نرخ برد ۳۰ روز اخیر به تفکیک منبع سرنخ"
+  },
+  {
+    "input_id": "Q13",
+    "day": 87,
+    "date": "2026-10-17",
+    "manager_id": "M09",
+    "type": "question",
+    "content_fa": "وضعیت پرونده‌های باز تیم شکایات را بگو."
+  },
+  {
+    "input_id": "Q14",
+    "day": 90,
+    "date": "2026-10-20",
+    "manager_id": "M08",
+    "type": "question",
+    "content_fa": "درصد تحویل به‌موقع مشهد در ۳ روز گذشته به تفکیک روز"
+  },
+  {
+    "input_id": "Q15",
+    "day": 88,
+    "date": "2026-10-18",
+    "manager_id": "M01",
+    "type": "question",
+    "content_fa": "کدام تصمیم‌های ماه اخیر اثر قابل‌سنجش داشتند؟"
+  },
+  {
+    "input_id": "Q16",
+    "day": 89,
+    "date": "2026-10-19",
+    "manager_id": "M06",
+    "type": "question",
+    "content_fa": "هزینه هر سرنخ ۷ روز اخیر به تفکیک منبع تبلیغ"
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "report_day": 66,
+  "manager_id": "M09",
+  "items": [
+    {
+      "item_id": "M09-066-1",
+      "title_fa": "کندی پاسخ اول پس از کمپین تخفیف",
+      "status": "new",
+      "kpi_id": "K_RSP_FRT_MED", "entity_id": "T_RSP", "dim": "", "kpi_date": "2026-09-26", "value": 0.0,
+      "related_series": ["K_RSP_TICKETS_BY_CAT:T_RSP:کد تخفیف", "K_RSP_BACKLOG:T_RSP:"],
+      "causes": [{"text_fa": "(نمونه) رشد تیکت‌های کمپین هم‌زمان با کاهش ظرفیت تیم", "confidence": 0.7},
+                 {"text_fa": "(نمونه) علت جایگزین بررسی‌شده و رد شده", "confidence": 0.1}],
+      "owner_manager_id": "M09",
+      "decision_card": null,
+      "evidence": [{"kpi_id": "K_RSP_TICKETS", "entity_id": "T_RSP", "dim": "", "kpi_date": "2026-09-26", "value": 0, "query_id": "q_rsp_tickets"}]
+    }
+  ],
+  "numbers": [{"kpi_id": "K_RSP_FRT_MED", "entity_id": "T_RSP", "dim": "", "kpi_date": "2026-09-26", "value": 0.0, "query_id": "q_frt"}],
+  "open_items": [],
+  "data_issues": [],
+  "decision_followups": [],
+  "mentioned_staff_ids": [],
+  "text_fa": "(نمونه ساختار؛ اعداد این فایل ساختگی و صفرند)"
+}

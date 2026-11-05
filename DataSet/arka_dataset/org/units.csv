@@ -1,0 +1,5 @@
+﻿unit_id,name_fa,parent_id,manager_id
+ORG,آرکا (کل سازمان),,M01
+U_SAL,واحد فروش,ORG,M02
+U_OPS,واحد عملیات,ORG,M03
+U_SUP,واحد پشتیبانی مشتری,ORG,M04

@@ -1,0 +1,18 @@
+{
+  "drop_day": 20,
+  "date": "2026-08-11",
+  "files": {
+    "orders.csv": 503,
+    "order_events.csv": 1751,
+    "web_sessions.csv": 2,
+    "tickets.csv": 85,
+    "ticket_events.csv": 192,
+    "csat.csv": 15,
+    "crm_leads.csv": 26,
+    "crm_lead_events.csv": 48,
+    "mkt_daily.csv": 2,
+    "tasks.csv": 15,
+    "task_events.csv": 38,
+    "staff_availability.csv": 24
+  }
+}
